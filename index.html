@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MEMS - Multi Event Management System</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+background:linear-gradient(135deg,#1e3a8a,#0f172a);
+color:white;
+}
+
+header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 60px;
+}
+
+.logo{
+font-size:24px;
+font-weight:bold;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin-left:20px;
+opacity:0.8;
+}
+
+.hero{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:80px;
+}
+
+.hero-left{
+max-width:500px;
+}
+
+.hero-left h1{
+font-size:50px;
+line-height:1.2;
+}
+
+.hero-left span{
+color:#60a5fa;
+font-style:italic;
+}
+
+.hero-left p{
+margin-top:20px;
+opacity:0.8;
+}
+
+.features{
+margin-top:25px;
+}
+
+.features span{
+background:#1e293b;
+padding:8px 14px;
+border-radius:20px;
+margin-right:10px;
+font-size:14px;
+}
+
+.portal-card{
+background:#111827;
+padding:40px;
+border-radius:12px;
+width:320px;
+box-shadow:0 10px 40px rgba(0,0,0,0.5);
+}
+
+.portal-card h2{
+margin-bottom:10px;
+}
+
+.portal-card h3{
+margin-top:20px;
+}
+
+.portal-card p{
+opacity:0.7;
+margin-bottom:15px;
+}
+
+button{
+width:100%;
+padding:12px;
+margin-top:10px;
+border:none;
+border-radius:6px;
+cursor:pointer;
+font-size:15px;
+}
+
+.primary{
+background:#3b82f6;
+color:white;
+}
+
+.primary:hover{
+background:#2563eb;
+}
+
+.secondary{
+background:transparent;
+border:1px solid #3b82f6;
+color:white;
+}
+
+.secondary:hover{
+background:#3b82f6;
+}
+
+.admin{
+background:#22c55e;
+color:white;
+}
+
+.admin:hover{
+background:#16a34a;
+}
+
+hr{
+margin:20px 0;
+border:1px solid rgba(255,255,255,0.2);
+}
+
+footer{
+text-align:center;
+padding:20px;
+margin-top:50px;
+opacity:0.7;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">MEMS</div>
+
+<nav>
+<a href="#">Home</a>
+<a href="#">Events</a>
+<a href="#">Support</a>
+</nav>
+
+</header>
+
+<section class="hero">
+
+<div class="hero-left">
+
+<h1>
+Event Management
+<span>Made Modern</span>
+</h1>
+
+<p>
+A platform for managing college events, participants,
+registrations and organizers in one place.
+</p>
+
+<div class="features">
+
+<span>⚡ Fast Registration</span>
+<span>📅 Multi Event Support</span>
+<span>📢 Live Updates</span>
+
+</div>
+
+</div>
+
+<div class="portal-card">
+
+<h2>Access Portal</h2>
+
+<p>Select your role</p>
+
+<h3>Participant</h3>
+
+<a href="participant-login.html">
+<button class="primary">Participant Login</button>
+</a>
+
+<a href="participant-register.html">
+<button class="secondary">New Participant Sign Up</button>
+</a>
+
+<hr>
+
+<h3>Organizer</h3>
+
+<a href="organizer-login.html">
+<button class="admin">Organizer Login</button>
+</a>
+
+<a href="organizer-register.html">
+<button class="secondary">New Organizer Sign Up</button>
+</a>
+
+</div>
+
+</section>
+
+<footer>
+<p>© 2026 Multi Event Management System</p>
+</footer>
+
+</body>
+</html>

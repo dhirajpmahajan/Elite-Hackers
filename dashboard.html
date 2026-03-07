@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Dashboard</title>
+<link rel="stylesheet" href="mems.css">
+</head>
+
+<body>
+
+<h1>Welcome to Multi Event Management System</h1>
+
+<div>
+<button onclick="location.href='mems.html'">View Events</button>
+<button onclick="location.href='participant.html'">My Profile</button>
+<button onclick="logout()">Logout</button>
+</div>
+
+<script>
+
+function logout(){
+localStorage.removeItem("user");
+window.location="index.html";
+}
+
+
+const user = localStorage.getItem("user");
+
+if(!user){
+window.location="index.html";
+}
+
+</script>
+
+</body>
+</html>

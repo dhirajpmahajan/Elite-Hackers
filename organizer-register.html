@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Organizer Signup</title>
+
+<link rel="stylesheet" href="mems.css">
+
+</head>
+
+<body>
+
+<div class="auth-container">
+
+<div class="auth-card">
+
+<h2>Organizer Sign Up</h2>
+
+<form id="organizerRegisterForm">
+
+<input type="text" id="name" placeholder="Organizer Name" required>
+
+<input type="email" id="email" placeholder="Email" required>
+
+<input type="password" id="password" placeholder="Password" required>
+
+<button type="submit">Register</button>
+
+</form>
+
+<p class="switch">
+Already registered?
+<a href="organizer-login.html">Login</a>
+</p>
+
+</div>
+
+</div>
+
+<script>
+
+document.getElementById("organizerRegisterForm").addEventListener("submit", async function(e){
+
+e.preventDefault()
+
+const name=document.getElementById("name").value
+const email=document.getElementById("email").value
+const password=document.getElementById("password").value
+
+const response = await fetch("http://localhost:5000/api/organizers/register",{
+
+method:"POST",
+
+headers:{
+"Content-Type":"application/json"
+},
+
+body:JSON.stringify({name,email,password})
+
+})
+
+const data = await response.json()
+
+if(response.ok){
+
+alert("Organizer Registered")
+
+window.location.href="organizer-login.html"
+
+}
+else{
+
+alert(data.message)
+
+}
+
+})
+
+</script>
+
+</body>
+</html>

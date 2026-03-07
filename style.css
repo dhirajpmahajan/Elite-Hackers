@@ -1,0 +1,132 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family: "Segoe UI", sans-serif;
+}
+
+body{
+min-height:100vh;
+background:linear-gradient(135deg,#0f172a,#1e293b,#3b82f6);
+color:white;
+}
+
+/* Navbar */
+
+.navbar{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 40px;
+background:rgba(0,0,0,0.3);
+backdrop-filter:blur(10px);
+}
+
+.logo{
+font-size:22px;
+font-weight:bold;
+color:#3b82f6;
+}
+
+.nav-links a{
+margin-left:20px;
+text-decoration:none;
+color:white;
+font-size:14px;
+}
+
+/* Page Layout */
+
+.container{
+display:flex;
+justify-content:center;
+align-items:center;
+min-height:80vh;
+}
+
+/* Cards */
+
+.card{
+background:rgba(255,255,255,0.08);
+backdrop-filter:blur(12px);
+padding:40px;
+border-radius:15px;
+width:350px;
+box-shadow:0 10px 25px rgba(0,0,0,0.4);
+}
+
+/* Headings */
+
+h1{
+font-size:40px;
+margin-bottom:10px;
+}
+
+h2{
+margin-bottom:20px;
+}
+
+/* Inputs */
+
+.input-group{
+margin-bottom:15px;
+}
+
+.input-group input,
+.input-group select{
+width:100%;
+padding:12px;
+border:none;
+border-radius:8px;
+background:#1e293b;
+color:white;
+}
+
+/* Buttons */
+
+.btn{
+width:100%;
+padding:12px;
+border:none;
+background:#3b82f6;
+color:white;
+font-weight:600;
+border-radius:8px;
+cursor:pointer;
+transition:0.3s;
+}
+
+.btn:hover{
+background:#2563eb;
+}
+
+/* Dashboard */
+
+.dashboard{
+padding:40px;
+}
+
+.event-card{
+background:rgba(255,255,255,0.1);
+padding:20px;
+margin-bottom:15px;
+border-radius:10px;
+}
+
+.event-card h3{
+margin-bottom:10px;
+}
+
+/* Tables */
+
+table{
+width:100%;
+border-collapse:collapse;
+margin-top:20px;
+}
+
+th,td{
+padding:10px;
+border-bottom:1px solid rgba(255,255,255,0.2);
+text-align:left;
+}

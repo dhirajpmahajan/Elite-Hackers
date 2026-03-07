@@ -1,0 +1,190 @@
+body{
+margin:0;
+font-family:Segoe UI, sans-serif;
+background:linear-gradient(135deg,#0f172a,#1e3a8a);
+color:white;
+}
+
+
+/* NAVBAR */
+
+.navbar{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 60px;
+}
+
+.navbar a{
+color:white;
+text-decoration:none;
+margin-left:20px;
+opacity:0.8;
+}
+
+.logo{
+font-size:22px;
+font-weight:bold;
+}
+
+
+/* HERO SECTION */
+
+.hero{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:80px;
+}
+
+
+.hero-left h1{
+font-size:52px;
+line-height:1.2;
+}
+
+.hero-left span{
+color:#60a5fa;
+font-style:italic;
+}
+
+.hero-left p{
+margin-top:20px;
+opacity:0.8;
+max-width:500px;
+}
+
+
+.features{
+margin-top:25px;
+}
+
+.features span{
+background:#1e293b;
+padding:8px 14px;
+border-radius:20px;
+margin-right:10px;
+font-size:14px;
+}
+
+
+/* LOGIN CARD */
+
+.login-card{
+background:#111827;
+padding:40px;
+border-radius:12px;
+width:320px;
+box-shadow:0 10px 40px rgba(0,0,0,0.5);
+}
+
+.login-card h2{
+margin-bottom:10px;
+}
+
+.login-card p{
+font-size:14px;
+opacity:0.7;
+margin-bottom:20px;
+}
+
+.portal-btn{
+width:100%;
+padding:12px;
+margin-top:10px;
+border:none;
+background:#3b82f6;
+color:white;
+border-radius:6px;
+font-size:15px;
+cursor:pointer;
+}
+
+.portal-btn:hover{
+background:#2563eb;
+}
+
+.secondary-btn{
+width:100%;
+padding:10px;
+margin-top:10px;
+border:1px solid #3b82f6;
+background:transparent;
+color:white;
+border-radius:6px;
+cursor:pointer;
+}
+
+.admin{
+background:#22c55e;
+}
+
+.admin:hover{
+background:#16a34a;
+}
+
+
+footer{
+text-align:center;
+margin-top:80px;
+padding:20px;
+opacity:0.6;
+}
+
+.auth-container{
+
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+
+}
+
+.auth-card{
+
+background:#111827;
+padding:40px;
+border-radius:10px;
+width:320px;
+box-shadow:0 10px 30px rgba(0,0,0,0.5);
+
+}
+
+.auth-card input{
+
+width:100%;
+padding:10px;
+margin-top:12px;
+border-radius:6px;
+border:none;
+background:#1f2937;
+color:white;
+
+}
+
+.auth-card button{
+
+width:100%;
+margin-top:20px;
+padding:10px;
+background:#3b82f6;
+border:none;
+border-radius:6px;
+color:white;
+cursor:pointer;
+
+}
+
+.switch{
+
+margin-top:15px;
+font-size:14px;
+
+}
+
+.switch a{
+
+color:#60a5fa;
+text-decoration:none;
+
+}
